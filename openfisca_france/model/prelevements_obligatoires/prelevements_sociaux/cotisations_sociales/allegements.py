@@ -6,7 +6,7 @@ from functools import partial
 import logging
 
 from numpy import (
-    busday_count as original_busday_count, datetime64, logical_or as or_, logical_and as and_, timedelta64
+    busday_count as original_busday_count, datetime64, logical_or as or_, logical_and as and_, timedelta64, where
     )
 
 from openfisca_core import periods
@@ -402,7 +402,7 @@ def compute_allegement_cotisation_allocations_familiales(simulation, period):
     assiette = simulation.calculate_add('assiette_allegement', period)
     smic_proratise = simulation.calculate_add('smic_proratise', period)
     law = simulation.parameters_at(period.start).prelevements_sociaux.allegement_cotisation_allocations_familiales
-    ratio_smic_salaire = numpy.where(smic_proratise > 0, assiette / smic_proratise, 0)
+    ratio_smic_salaire = where(smic_proratise > 0, assiette / smic_proratise, 0)
 
     # Montant de l'allegment
     return (ratio_smic_salaire < law.plafond_en_nombre_de_smic) * law.reduction * assiette
