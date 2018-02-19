@@ -1751,8 +1751,6 @@ class invfor(Variable):
     entity = FoyerFiscal
     label = u"invfor"
     definition_period = YEAR
-    end = '2016-12-31'
-
 
     def formula_2002_01_01(foyer_fiscal, period, parameters):
         '''
