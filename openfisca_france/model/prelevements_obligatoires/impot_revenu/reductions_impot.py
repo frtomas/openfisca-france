@@ -1902,7 +1902,6 @@ class invfor(Variable):
         f7uv = foyer_fiscal('f7uv', period)
         f7uw = foyer_fiscal('f7uw', period)
         f7ux = foyer_fiscal('f7ux', period)
-        _P = parameters(period)
         P = parameters(period).impot_revenu.reductions_impots.invfor
 
         max0 = max_(0, P.ifortra_seuil * (maries_ou_pacses + 1) - f7ul)
@@ -1930,7 +1929,6 @@ class invfor(Variable):
         f7uu = foyer_fiscal('f7uu', period)
         f7uv = foyer_fiscal('f7uv', period)
         f7uw = foyer_fiscal('f7uw', period)
-        _P = parameters(period)
         P = parameters(period).impot_revenu.reductions_impots.invfor
 
         max0 = max_(0, P.ifortra_seuil * (maries_ou_pacses + 1) - f7ul)
@@ -1957,7 +1955,6 @@ class invfor(Variable):
         f7un = foyer_fiscal('f7un', period)
         f7uu = foyer_fiscal('f7uu', period)
         f7uv = foyer_fiscal('f7uv', period)
-        _P = parameters(period)
         P = parameters(period).impot_revenu.reductions_impots.invfor
 
         max0 = max_(0, P.ifortra_seuil * (maries_ou_pacses + 1) - f7ul)
