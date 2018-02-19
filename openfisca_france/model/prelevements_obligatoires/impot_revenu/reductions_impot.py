@@ -2128,7 +2128,6 @@ class locmeu(Variable):
     entity = FoyerFiscal
     label = u"locmeu"
     definition_period = YEAR
-    end = '2016-12-31'
 
     def formula_2009_01_01(foyer_fiscal, period, parameters):
         '''
@@ -2684,7 +2683,6 @@ class resimm(Variable):
     entity = FoyerFiscal
     label = u"resimm"
     definition_period = YEAR
-    end = '2016-12-31'
 
 
     def formula_2009_01_01(foyer_fiscal, period, parameters):
@@ -3014,8 +3012,6 @@ class scelli(Variable):
     entity = FoyerFiscal
     label = u"scelli"
     definition_period = YEAR
-    end = '2016-12-31'
-
 
     def formula_2009_01_01(foyer_fiscal, period, parameters):
         '''
