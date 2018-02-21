@@ -1,5 +1,14 @@
 # Changelog
 
+### 20.0.10 [#908](https://github.com/openfisca/openfisca-france/pull/908)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : 2009 - 2016
+* Détails :
+  - A partir de 2013, une partie des plus-values est taxé au barème alors qu'avant elles étaient taxées forfaitairement => correction de la formule de l'IR
+  - Les plus-values et revenus du capital (taxées forfaitairement ou au barème ou éxonérées) doivent entrer en compte dans le calcul du RFR => correction de la formule du RFR
+  - Correction d'un des taux forfaitaires
+
 ### 20.0.9 [#907](https://github.com/openfisca/openfisca-france/pull/907)
 
 * Évolution du système socio-fiscal.
