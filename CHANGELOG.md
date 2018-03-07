@@ -1,6 +1,6 @@
 # Changelog
 
-### 20.3 [#908](https://github.com/openfisca/openfisca-france/pull/908)
+### 20.3.0 [#908](https://github.com/openfisca/openfisca-france/pull/908)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : 2009 - 2016
@@ -11,21 +11,40 @@
   - Correction d'un des taux forfaitaires
   - Ajout de nouvelles inputs variables associées aux nouvelles cases des déclarations fiscales se rapportant aux plus-values
 
+### 20.2.0 [#907](https://github.com/openfisca/openfisca-france/pull/907)
 
-### 20.0.9 [#907](https://github.com/openfisca/openfisca-france/pull/907)
-
-* Évolution du système socio-fiscal.
+Évolution du système socio-fiscal.
 * Périodes concernées : 2009 - 2016
+* Zones impactées : openfisca_france/model/prelevements_obligatoires/impot_revenu/charges_deductibles.py
 * Détails :
   - Ammélioration du calcul des grosses réparations et de leurs prise en compte dans le calcul des charges déductibles
+  - Ajout de nouvelles variables d'inputs pour les cases de l'IR correspondantes
 
-### 20.0.8 [#906](https://github.com/openfisca/openfisca-france/pull/906)
+### 20.1.0 [#884](https://github.com/openfisca/openfisca-france/pull/884)
+
+* Évolution du système socio-fiscal.
+* Périodes concernées : A partir de 04/2017
+* Zones impactées : `prestations_familiales/paje.py`
+* Détails :
+  - Remplace la `paje_clca` par la `page_prepare` dans le calcul de la `paje` à partir d'avril 2017.
+
+### 20.0.9 [#906](https://github.com/openfisca/openfisca-france/pull/906)
 
 * Évolution du système socio-fiscal.
 * Périodes concernées : principalement, mise à jour avec les barèmes 2016, avec quelques corrections sur 2012-2013 et 2015.
 * Détails :
   - Ajout des barèmes IPP de l'impôt sur le revenu 2016
   - Correction de quelques paramètres de l'impôt, pour les années précédentes
+
+### 20.0.8 [#892](https://github.com/openfisca/openfisca-france/pull/862)
+
+* Correction d'un bug
+* Zones impactées :
+  - `prelevements_obligatoires/prelevements_sociaux/cotisations_sociales/allegements`
+  - `openfisca_france/model/revenus/activite/salarie.py`
+* Détails :
+  - Corrige #844 (erreurs de calcul constatées sur la réduction générale dite "Fillon")
+  - `base_function` des dates de début et de fin de contrat de travail devient `requested_period_last_or_next_value`
 
 ### 20.0.7 [#892](https://github.com/openfisca/openfisca-france/pull/867)
 
