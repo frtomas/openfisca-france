@@ -1,5 +1,12 @@
 # Changelog
 
+### 20.5.1 [#949](https://github.com/openfisca/openfisca-france/pull/949)
+
+* Changement mineur.
+* Périodes concernées : À partir de 2018
+* Détails :
+  - Suppression de l'éligibilité des foyers de Saint Martin au chèque énergie
+
 ### 20.5.0 [#909](https://github.com/openfisca/openfisca-france/pull/909)
 
 * Évolution du système socio-fiscal.
