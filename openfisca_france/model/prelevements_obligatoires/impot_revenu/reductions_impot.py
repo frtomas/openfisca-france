@@ -1819,12 +1819,14 @@ class invfor(Variable):
 
         max0 = max_(0, P.ifortra_seuil * (maries_ou_pacses + 1) - f7ul)
         max1 = max_(0, max0 - f7uu - f7te - f7uv - f7tf)
-        return (P.taux * (
-            min_(f7un, P.seuil * (maries_ou_pacses + 1)) +
-            min_(f7up, max1) +
-            min_(f7uq, P.iforges_seuil * (maries_ou_pacses + 1))) +
-            P.report10 * min_(f7uu + f7te + f7uv + f7tf, max0) +
-            P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1)))
+        return (
+            P.taux * (
+                min_(f7un, P.seuil * (maries_ou_pacses + 1))
+                + min_(f7up, max1)
+                + min_(f7uq, P.iforges_seuil * (maries_ou_pacses + 1)))
+            + P.report10 * min_(f7uu + f7te + f7uv + f7tf, max0)
+            + P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1))
+            )
 
     def formula_2012_01_01(foyer_fiscal, period, parameters):
         '''
@@ -1846,13 +1848,15 @@ class invfor(Variable):
         max0 = max_(0, P.ifortra_seuil * (maries_ou_pacses + 1) - f7ul)
         max1 = max_(0, max0 - f7uu - f7te - f7uv - f7tf)
         max2 = max_(0, max1 - f7tg - f7uw)
-        return (P.taux * (
-            min_(f7un, P.seuil * (maries_ou_pacses + 1)) +
-            min_(f7up, max2) +
-            min_(f7uq, P.iforges_seuil * (maries_ou_pacses + 1))) +
-            P.report10 * min_(f7uu + f7te + f7uv + f7tf, max0) +
-            P.report11 * min_(f7tg + f7uw, max1) +
-            P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1)))
+        return (
+            P.taux * (
+                min_(f7un, P.seuil * (maries_ou_pacses + 1))
+                + min_(f7up, max2)
+                + min_(f7uq, P.iforges_seuil * (maries_ou_pacses + 1)))
+            + P.report10 * min_(f7uu + f7te + f7uv + f7tf, max0) +
+            + P.report11 * min_(f7tg + f7uw, max1) +
+            + P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1))
+            )
 
     def formula_2013_01_01(foyer_fiscal, period, parameters):
         '''
@@ -1877,14 +1881,16 @@ class invfor(Variable):
         max1 = max_(0, max0 - f7uu - f7te - f7uv - f7tf)
         max2 = max_(0, max1 - f7tg - f7uw)
         max3 = max_(0, max2 - f7th - f7ux)
-        return (P.taux * (
-            min_(f7un, P.seuil * (maries_ou_pacses + 1)) +
-            min_(f7up, max3) +
-            min_(f7uq, P.iforges_seuil * (maries_ou_pacses + 1))) +
-            P.report10 * min_(f7uu + f7te + f7uv + f7tf, max0) +
-            P.report11 * min_(f7tg + f7uw, max1) +
-            P.report12 * min_(f7th + f7ux, max2) +
-            P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1)))
+        return (
+            P.taux * (
+                min_(f7un, P.seuil * (maries_ou_pacses + 1))
+                + min_(f7up, max3)
+                + min_(f7uq, P.iforges_seuil * (maries_ou_pacses + 1))) 
+            + P.report10 * min_(f7uu + f7te + f7uv + f7tf, max0)
+            + P.report11 * min_(f7tg + f7uw, max1)
+            + P.report12 * min_(f7th + f7ux, max2)
+            + P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1))
+            )
 
     def formula_2014_01_01(foyer_fiscal, period, parameters):
         '''
@@ -1908,11 +1914,13 @@ class invfor(Variable):
         max1 = max_(0, max0 - f7uu - f7te - f7tf)
         max2 = max_(0, max1 - f7tg - f7uv)
         max3 = max_(0, max2 - f7th - f7uw - f7ux - f7ti)
-        return (P.taux * min_(f7un, P.seuil * (maries_ou_pacses + 1)) +
-            P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1)) +
-            P.report10 * min_(f7uu + f7te + f7tf, max0) +
-            P.report11 * min_(f7tg + f7uv, max1) +
-            P.report12 * min_(f7th + f7uw + f7ux + f7ti, max2))
+        return (
+            P.taux * min_(f7un, P.seuil * (maries_ou_pacses + 1))
+            + P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1))
+            + P.report10 * min_(f7uu + f7te + f7tf, max0)
+            + P.report11 * min_(f7tg + f7uv, max1)
+            + P.report12 * min_(f7th + f7uw + f7ux + f7ti, max2)
+            )
 
     def formula_2015_01_01(foyer_fiscal, period, parameters):
         '''
@@ -1935,11 +1943,12 @@ class invfor(Variable):
         max1 = max_(0, max0 - f7te - f7tf)
         max2 = max_(0, max1 - f7tg - f7uu)
         max3 = max_(0, max2 - f7th - f7uv - f7uw - f7ti)
-        return (P.taux * min_(f7un, P.seuil * (maries_ou_pacses + 1)) +
-            P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1)) +
-            P.report10 * min_(f7te + f7tf, max0) +
-            P.report11 * min_(f7tg + f7uu, max1) +
-            P.report12 * min_(f7th + f7uv + f7uw + f7ti, max2))
+        return (
+            P.taux * min_(f7un, P.seuil * (maries_ou_pacses + 1))
+            + P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1))
+            + P.report10 * min_(f7te + f7tf, max0)
+            + P.report11 * min_(f7tg + f7uu, max1)
+            + P.report12 * min_(f7th + f7uv + f7uw + f7ti, max2))
 
     def formula_2016_01_01(foyer_fiscal, period, parameters):
         '''
@@ -1961,11 +1970,13 @@ class invfor(Variable):
         max1 = max_(0, max0 - f7te - f7tf)
         max2 = max_(0, max1 - f7tg)
         max3 = max_(0, max2 - f7th - f7uu - f7uv - f7ti)
-        return (P.taux * min_(f7un, P.seuil * (maries_ou_pacses + 1)) +
-            P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1)) +
-            P.report10 * min_(f7te + f7tf, max0) +
-            P.report11 * min_(f7tg, max1) +
-            P.report12 * min_(f7th + f7uu + f7uv + f7ti, max2))
+        return (
+            P.taux * min_(f7un, P.seuil * (maries_ou_pacses + 1))
+            + P.taux_ass * min_(f7ul, P.ifortra_seuil * (maries_ou_pacses + 1))
+            + P.report10 * min_(f7te + f7tf, max0)
+            + P.report11 * min_(f7tg, max1)
+            + P.report12 * min_(f7th + f7uu + f7uv + f7ti, max2)
+            )
 
 
 class invlst(Variable):
