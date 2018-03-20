@@ -2970,7 +2970,7 @@ class f7un(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers: acquisition"
+    label = u"Investissements forestiers: frais d'acquisition"
     definition_period = YEAR
 
 
@@ -2979,7 +2979,7 @@ class f7ul(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : frais d'assurance"
 #    start_date = date(2011, 1, 1)
     definition_period = YEAR
 
@@ -2989,7 +2989,7 @@ class f7uu(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report N-4, hors sinistre"
 #    start_date = date(2010, 1, 1)
     definition_period = YEAR
 
@@ -2999,7 +2999,7 @@ class f7uv(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report N-3, hors sinistre"
 #    start_date = date(2011, 1, 1)
     definition_period = YEAR
 
@@ -3009,7 +3009,7 @@ class f7uw(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report N-2, hors sinistre"
 #    start_date = date(2012, 1, 1)
     definition_period = YEAR
 
@@ -3019,7 +3019,7 @@ class f7th(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report N-3, après sinistre"
 #    start_date = date(2013, 1, 1)
     definition_period = YEAR
 
@@ -3028,7 +3028,7 @@ class f7ti(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report N-2, après sinistre"
 #    start_date = date(2014, 1, 1)
     definition_period = YEAR
 
@@ -3037,7 +3037,7 @@ class f7tj(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report N-1, après sinistre"
 #    start_date = date(2015, 1, 1)
     definition_period = YEAR
 
@@ -3046,7 +3046,7 @@ class f7tk(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report N-1, après sinistre,  avec adhésion à une organisation de producteurs"
 #    start_date = date(2015, 1, 1)
     definition_period = YEAR
 
@@ -3055,7 +3055,7 @@ class f7tm(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report 2015, après sinistre"
 #    start_date = date(2016, 1, 1)
     definition_period = YEAR
 
@@ -3064,7 +3064,7 @@ class f7to(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report 2015, après sinistre, avec adhésion à une association de producteurs""
 #    start_date = date(2016, 1, 1)
     definition_period = YEAR
 
@@ -3073,7 +3073,7 @@ class f7ux(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report N-1, hors sinistre"
 #    start_date = date(2013, 1, 1)
     definition_period = YEAR
 
@@ -3082,7 +3082,7 @@ class f7vm(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report 2015, hors sinistre"
 #    start_date = date(2016, 1, 1)
     definition_period = YEAR
 
@@ -3091,7 +3091,7 @@ class f7vn(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report 2015, hors sinistre, avec adhésion à une association de producteurs""
 #    start_date = date(2016, 1, 1)
     definition_period = YEAR
 
@@ -3100,7 +3100,7 @@ class f7vp(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report 2014, hors sinistre, avec adhésion à une association de producteurs"
 #    start_date = date(2016, 1, 1)
     definition_period = YEAR
 
@@ -3109,7 +3109,7 @@ class f7tg(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report 2011, après sinistre"
 #    start_date = date(2012, 1, 1)
     definition_period = YEAR
 
@@ -3119,9 +3119,8 @@ class f7tf(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : report 2010, après sinistre"
 #    start_date = date(2011, 1, 1)
-#    end = '2013-12-31'
     definition_period = YEAR
 
 
@@ -3130,7 +3129,7 @@ class f7ut(Variable):
     value_type = int
     unit = 'currency'
     entity = FoyerFiscal
-    label = u"Investissements forestiers"
+    label = u"Investissements forestiers : indicatrice travaux consécutifs à un sinistre"
 #    start_date = date(2009, 1, 1)
     definition_period = YEAR
 
